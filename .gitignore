@@ -1,0 +1,12 @@
+node_modules/
+# vitepress build output
+.vitepress/dist
+.vitepress/cache
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+# pnpm link folder
+pnpm-global
+# Optional npm cache directory
+.npm
+# Dependency directories
+node_modules/

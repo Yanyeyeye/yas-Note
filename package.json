@@ -1,0 +1,22 @@
+{
+  "name": "yas-note",
+  "version": "1.0.0",
+  "description": "note writing",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "Yanyeyeyes",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-beta.1"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
