@@ -15,6 +15,12 @@
   --vp-c-brand-dark: #535bf2;
   --vp-c-brand-darker: #454ce1;
   --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
+
+  
+  --s-bg: #ffffff;
+  --s-scroll: #d9d9d9;
+  --s-scroll-hover: #bbbbbb;
+  scrollbar-color: var(--s-scrollbar) var(--s-bg);
 }
 
 /**
@@ -87,5 +93,27 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+/**
+ * -webkit-scrollbar
+ * -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--s-scroll);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--s-scroll-hover);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--s-bg);
 }
 
