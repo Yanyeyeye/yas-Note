@@ -7,7 +7,7 @@ export default defineConfig({
   head: [
     [
       'link',
-      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+      { rel: 'icon', href: '/yas.png' }
     ]
   ],
   themeConfig: {
