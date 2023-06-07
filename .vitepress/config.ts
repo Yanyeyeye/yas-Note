@@ -10,12 +10,13 @@ export default defineConfig({
       { rel: 'icon', href: '/yas.png' }
     ]
   ],
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Note Menu',
         items: [
-          { text: 'Threejs', link: '/threejs/index.md' },
+          { text: 'Threejs', link: '/threejs/geometry.md' },
           { text: 'Blender', link: '/blender/index.md' },
           { text: 'JavaScript', link: '/javascript/index.md' },
           { text: 'Nodejs', link: '/nodejs/index.md' },
@@ -30,7 +31,7 @@ export default defineConfig({
         text: '基础',
           items: [
           { text: '几何体Geometry', link: '/threejs/geometry.md' },
-          { text: '几何体基础操作', link: '/threejs/index.md' },
+          { text: '几何体基础操作', link: '/threejs/basisControl.md' },
           { text: '全屏与改变大小', link: '/threejs/screen.md' },
           { text: '相机Camera', link: '/threejs/camera.md' },
           { text: '可视化调试DEBUG', link: '/threejs/debug.md' },
@@ -91,6 +92,5 @@ export default defineConfig({
     search: {
       provider: 'local'
     }
-  },
-  lastUpdated: true
+  }
 })
