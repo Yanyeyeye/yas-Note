@@ -34,7 +34,7 @@ export default defineConfig({
           { text: '几何体基础操作', link: '/threejs/basisControl.md' },
           { text: '全屏与改变大小', link: '/threejs/screen.md' },
           { text: '相机Camera', link: '/threejs/camera.md' },
-          { text: '可视化调试DEBUG', link: '/threejs/debug.md' },
+          { text: '可视化调试Debug', link: '/threejs/debug.md' },
           { text: '纹理Texture', link: '/threejs/texture.md' },
           { text: '材质Material', link: '/threejs/material.md' },
           { text: '字体Fonts', link: '/threejs/fonts.md' },
