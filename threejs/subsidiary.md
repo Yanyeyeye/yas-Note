@@ -55,7 +55,7 @@ controls.autoRotate = true // 是否能够自选
 
 ## 性能监视器
 
-### 使用Spector来监控并优化性能
+### 使用Spector来监控性能消耗
 
 **步骤1**：安装`Spectorjs`
   
