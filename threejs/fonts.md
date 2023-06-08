@@ -1,4 +1,4 @@
-# Fonts字体
+# 字体Fonts :mahjong:
 
 ::: tip
 `ThreeJS`中提供了一些字体位置为：
