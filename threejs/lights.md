@@ -1,4 +1,4 @@
-# 光Light :flashlight:
+# 光Lights :flashlight:
 
 ## `AmbientLight`环境光源
 
