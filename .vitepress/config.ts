@@ -40,7 +40,7 @@ export default defineConfig({
           { text: '字体Fonts', link: '/threejs/fonts.md' },
           { text: '光Lights', link: '/threejs/lights.md' },
           { text: '阴影Shadow', link: '/threejs/shadow.md' },
-          { text: '辅助器', link: '/threejs' }
+          { text: '辅助器', link: '/threejs/subsidiary.md' }
         ]
       },
       {
