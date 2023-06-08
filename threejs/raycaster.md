@@ -492,5 +492,5 @@ rayCaster.firstHitOnly = true
 ```
 
 ::: tip
-访问 [BVH](https://github.com/gkjohnson/three-mesh-bvh) 来获取更多有关**BVH**的内容
+访问 [BVH](https://www.npmjs.com/package/three-mesh-bvh) 来获取更多有关**BVH**的内容
 :::
