@@ -60,8 +60,10 @@ export default defineConfig({
       {
         text:'实践',
         items:[
-          { text: '制作一个鬼屋', link: '/threejs/project1.md' },
-          { text: '制作一个银河系', link: '/threejs/project2.md' },
+          { text: '鬼屋', link: '/threejs/ghostHouse.md' },
+          { text: '海洋', link: '/threejs/ocean.md' },
+          { text: '银河系', link: '/threejs/galaxy.md' },
+          { text: '银河系进阶', link: '/threejs/galaxyAdvance.md' },
           { text: '混合HTML与WebGL', link: '/threejs/mixHtmlWebGL.md' },
           { text: '导入模型并使用UV贴图', link: '/threejs/modelImport.md' }
         ],
