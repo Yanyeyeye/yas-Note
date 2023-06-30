@@ -17,7 +17,8 @@
     "allowed_elements": [
       "p",
       "img",
-      "u"
+      "u",
+      "div"
     ]
   },
   "MD035": {
