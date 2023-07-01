@@ -11,9 +11,11 @@
   "author": "Yanyeyeyes",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.63.6",
     "vitepress": "1.0.0-beta.1"
   },
   "dependencies": {
+    "three": "^0.154.0",
     "vue": "^3.3.4"
   },
   "engines": {
