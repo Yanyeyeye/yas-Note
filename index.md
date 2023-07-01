@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 立即查看
-      link: /threejs/geometry.md
+      link: /threejs/profile.md
 
 features:
   - title: Threejs

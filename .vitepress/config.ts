@@ -28,6 +28,13 @@ export default defineConfig({
     sidebar: {
       '/threejs/':[
       {
+        text: '介绍',
+          items: [
+          { text: '前言', link: '/threejs/profile.md' },
+          { text: '初始化配置', link: '/threejs/initialConfig.md' }
+        ]
+      },
+      {
         text: '基础',
           items: [
           { text: '几何体Geometry', link: '/threejs/geometry.md' },
@@ -72,7 +79,7 @@ export default defineConfig({
         text: '其他',
         items: [
           { text: '性能优化', link: '/threejs/performance.md' },
-          { text: '问题解决', link: '/api-examples' },
+          { text: '问题解决', link: '/threejs/others.md' },
         ],
       }
     ]
