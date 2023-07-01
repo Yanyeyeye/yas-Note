@@ -79,7 +79,7 @@ export default defineConfig({
   },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Yanyeyeye' }
+      { icon: 'github', link: 'https://github.com/Yanyeyeye/Learning-Note' }
     ],
 
     footer: {
