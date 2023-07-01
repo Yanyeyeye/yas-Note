@@ -18,7 +18,9 @@
       "p",
       "img",
       "u",
-      "div"
+      "div",
+      "script",
+      "style"
     ]
   },
   "MD035": {
