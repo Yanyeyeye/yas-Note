@@ -13,18 +13,6 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Note Menu',
-        items: [
-          { text: 'Threejs', link: '/threejs/geometry.md' },
-          { text: 'Blender', link: '/blender/index.md' },
-          { text: 'JavaScript', link: '/javascript/index.md' },
-          { text: 'Nodejs', link: '/nodejs/index.md' },
-          { text: 'Python', link: '/python/index.md' },
-          { text: 'Other', link: '/others/index.md' }
-        ]}
-    ],
-
     sidebar: {
       '/threejs/':[
       {
