@@ -73,7 +73,7 @@ GTLF是一种格式，但里面还包括了其它格式的文件
 **步骤1**：导入模型
 
 ```ts:line-numbers
-import { GLTFLoader } from 'three/examples/tsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const gltfLoader = new GLTFLoader()
 gltfLoader.load(
