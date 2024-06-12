@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "YasNote",
+  title: "YasNote", // Logo旁的标题
   description: "侬好 (｡･∀･)ﾉﾞ嗨",
   head: [
     [
@@ -12,9 +12,21 @@ export default defineConfig({
   ],
   lastUpdated: true,
   themeConfig: {
+    // siteTitle: 'Yas' // logo旁的标题
+
+    logo: {
+      src: '/vola.png',
+      alt: 'hi'
+    },
+
+    outline: {
+      level: [2, 3],
+      label: '在此页面上'
+    },
+
     // https://vitepress.dev/reference/default-theme-config
     sidebar: {
-      '/threejs/':[
+      '/threejs/': [
       {
         text: '介绍',
           items: [
@@ -70,8 +82,33 @@ export default defineConfig({
           { text: '问题解决', link: '/threejs/others.md' },
         ],
       }
-    ]
-  },
+      ],
+      '/vuejs/': [
+        {
+          text: '前言', 
+          items: [
+              { text: '框架设计概览', link: '/vuejs/profile.md' },
+          ]
+        },
+        {
+          text: '框架设计', 
+          items: [
+              { text: '核心要素', link: '/vuejs/coreElement.md' },
+              { text: '构建产物', link: '/vuejs/buildup.md' },
+          ]
+        },
+        {
+          text: '设计思路',
+            items: [
+              { text: '声明式地描述UI', link: '/vuejs/descriptedUI.md' },
+              { text: '渲染器', link: '/vuejs/renderer.md' },
+              { text: 'Diff算法', link: '/vuejs/Diff.md' },
+              { text: '组件化', link: '/vuejs/component.md' },
+              { text: '编译器', link: '/vuejs/compiler.md' },
+          ]
+        },
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Yanyeyeye/Learning-Note' }
@@ -82,13 +119,13 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present Yanyeyeyes'
     },
 
-    logo: {
-      src: '/vola.png',
-      alt: 'hi'
-    },
-
     search: {
       provider: 'local'
-    }
+    },
+
+    nav: [
+      { text: 'Threejs', link: '/threejs/profile.md', activeMatch:'/threejs/' },
+      { text: 'Vuejs', link: '/vuejs/profile.md', activeMatch:'/vuejs/' },
+    ],
   }
 })

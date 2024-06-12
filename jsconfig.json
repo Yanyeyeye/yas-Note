@@ -1,1 +1,9 @@
-{"typings":"typings/","compilerOptions":{"module":"commonjs","target":"es2017"}}
+{
+  "typings": "typings/",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017"
+  },
+  "include": [".vitepress/**/*"],
+  "exclude": ["node_modules"]
+}

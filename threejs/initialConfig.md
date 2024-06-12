@@ -137,7 +137,7 @@ animate() // 调用动画函数
 
 <script setup lang="ts">
 import * as t from 'three'
-import { onMounted } from 'vue'
+import { onMounted, onUpdated } from 'vue'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 const scene = new t.Scene()
@@ -184,4 +184,13 @@ const animate = () => {
     requestAnimationFrame(animate)// 调用动画渲染60帧/s的显示屏
 }
 animate() // 调用动画函数
+
+window.addEventListener('click', (event) => {
+    const selObj = window.getSelection();
+    if(!selObj.isCollapsed){
+        console.log(selObj)
+        console.log(selObj.toString())
+    }
+});
+
 </script>

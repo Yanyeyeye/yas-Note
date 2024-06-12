@@ -5,7 +5,7 @@
 我们使用纹理贴图``textureLoader``来加载我们的`UV`贴图
 
 ```ts
-const bakedTexture = new textureLoader.load('baked.jpg')
+const bakedTexture = new t.TextureLoader().load('baked.jpg')
 ```
 
 :::tip
@@ -44,13 +44,13 @@ gltfLoader.load(
 - 对于贴图的优化
 
     ```ts
-    bakedTexture.encoding = t.sRGBEncoding
+    bakedTexture.colorSpace = THREE.SRGBColorSpace;
     ```
 
 - 对于渲染器`renderer`的优化
 
      ```ts
-     renderer.outputEncoding = t.sRGBEncoding
+     renderer.outputColorSpace = THREE.SRGBColorSpace;
      ```
 
 ## 自发光材质的处理

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "three": ["node_modules/three"]
+    }
+  },
+  "include": [".vitepress/**/*"],
+  "exclude": ["node_modules"]
+}
