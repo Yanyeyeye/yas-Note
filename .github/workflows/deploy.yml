@@ -35,13 +35,6 @@ jobs:
       - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
         with:
           version: 8 # 或者你想要的版本
-      - uses: actions/cache@v4 # 如果使用 pnpm / yarn，请取消注释
-        with:
-          path: ~/.pnpm-store # 或者你想要的缓存路径
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
