@@ -9,18 +9,14 @@ import { onMounted } from "vue";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
-const bakedTexture = new t.TextureLoader().load("model/vcbjfbu_4K_Albedo.jpg");
-const bakedMaterial = new t.MeshBasicMaterial({ map: bakedTexture });
-
+const albedoTexture = new t.TextureLoader().load("model/vcbjfbu_4K_Albedo.jpg");
 const normalTexture = new t.TextureLoader().load(
   "model/vcbjfbu_4K_Normal_LOD0.jpg"
 );
-const normalMaterial = new t.MeshNormalMaterial({ map: normalTexture });
-
 const roughnessTexture = new t.TextureLoader().load(
   "model/vcbjfbu_4K_Roughness.jpg"
 );
-const roughnessMaterial = new t.MeshNormalMaterial({ map: roughnessTexture });
+const donutMaterial = new t.MeshStandardMaterial({ map: albedoTexture, roughnessMap: roughnessTexture, normalMap: normalTexture, metalness: 0, roughness: 0.5 });
 
 const scene = new t.Scene();
 
@@ -29,13 +25,10 @@ gltfLoader.load("model/donut.glb", (gltf) => {
   const glbModel = gltf.scene;
   glbModel.traverse((child) => {
     if (child.isMesh) {
-      child.material = bakedMaterial;
-      // child.material.normalMap = normalMaterial;
-      // child.material.roughnessMap = roughnessMaterial;
+      child.material = donutMaterial;
     }
   });
   glbModel.scale.set(30, 30, 30);
-  console.log(glbModel);
   scene.add(glbModel)
 });
 
@@ -49,6 +42,9 @@ const camera = new t.PerspectiveCamera(75, PROPOTION, 0.1, 1000);
 camera.position.z = 1;
 camera.position.y = 2;
 camera.position.x = 1;
+
+const ambientLight = new t.AmbientLight(0xffffff, 1);
+scene.add(ambientLight);
 
 const renderer = new t.WebGLRenderer({
   antialias: true,
@@ -64,6 +60,7 @@ onMounted(() => {
 // 鼠标操作
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
+controls.autoRotate = true // 摄像机自动绕屏幕转动
 
 // const clock = new t.Clock() // 从初始化时就开始运行
 // animate()

@@ -11,14 +11,14 @@
   "author": "Yanyeyeyes",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.9",
     "@types/three": "^0.155.1",
-    "sass": "^1.77.5",
+    "sass": "^1.77.6",
     "vitepress": "1.0.0-beta.1"
   },
   "dependencies": {
     "three": "^0.154.0",
-    "vue": "^3.4.27"
+    "vue": "^3.4.30"
   },
   "engines": {
     "node": ">=14.0.0"
