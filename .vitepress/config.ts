@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base:'/yas-Note/',
   title: "YasNote", // Logo旁的标题
   description: "侬好 (｡･∀･)ﾉﾞ嗨",
   head: [
