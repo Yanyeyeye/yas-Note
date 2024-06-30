@@ -84,7 +84,7 @@ controls.enableDamping = true
 ```vue:line-numbers
 <script setup lang="ts">
 import * as t from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 const scene = new t.Scene()
 
@@ -132,13 +132,13 @@ animate() // 调用动画函数
     <div id="box"></div>
 </template>
 ```
-
+<!-- 
 <div id="box" style="margin:0 auto;width:300px;height:300px"></div>
 
-<script setup lang="ts">
+<script setup>
 import * as t from 'three'
 import { onMounted, onUpdated } from 'vue'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from './utils/OrbitControls.js'
 
 const scene = new t.Scene()
 
@@ -165,7 +165,7 @@ renderer.setSize(SIZE.width, SIZE.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 onMounted(() => {
-    document.getElementById('box')!.appendChild(renderer.domElement)
+    document.getElementById('box').appendChild(renderer.domElement)
 })
 
 // 鼠标操作
@@ -185,12 +185,4 @@ const animate = () => {
 }
 animate() // 调用动画函数
 
-window.addEventListener('click', (event) => {
-    const selObj = window.getSelection();
-    if(!selObj.isCollapsed){
-        console.log(selObj)
-        console.log(selObj.toString())
-    }
-});
-
-</script>
+</script> -->

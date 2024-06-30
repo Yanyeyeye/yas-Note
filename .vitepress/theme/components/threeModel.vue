@@ -6,8 +6,8 @@ const { Layout } = DefaultTheme;
 
 import * as t from "three";
 import { onMounted } from "vue";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OrbitControls } from "./OrbitControls.js";
+import { GLTFLoader } from "./GLTFLoader.js";
 
 const albedoTexture = new t.TextureLoader().load("model/vcbjfbu_4K_Albedo.jpg");
 const normalTexture = new t.TextureLoader().load(

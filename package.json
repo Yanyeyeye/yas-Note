@@ -12,12 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.9",
-    "@types/three": "^0.155.1",
+    "@types/three": "^0.165.0",
     "sass": "^1.77.6",
-    "vitepress": "1.0.0-beta.1"
+    "vitepress": "1.2.3"
   },
   "dependencies": {
-    "three": "^0.154.0",
+    "three": "^0.165.0",
     "vue": "^3.4.30"
   },
   "engines": {

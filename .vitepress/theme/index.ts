@@ -1,7 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+// import { h } from 'vue'
 import Theme from 'vitepress/theme'
-import threeModel from './components/threeModel.vue'
+// import threeModel from './components/threeModel.vue'
 import './style.css'
 
 export default {
@@ -16,7 +16,7 @@ export default {
   // },
   // override the Layout with a wrapper component that
   // injects the slots
-  Layout: threeModel,
+  // Layout: threeModel,
   enhanceApp({ app, router, siteData }) {
     // ...
   }
