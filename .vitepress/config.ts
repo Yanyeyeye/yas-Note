@@ -8,7 +8,7 @@ export default defineConfig({
   head: [
     [
       'link',
-      { rel: 'icon', href: '/yas.png' }
+      { rel: 'icon', href: '/yas-Note/yas.png' }
     ]
   ],
   lastUpdated: true,
